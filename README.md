@@ -39,8 +39,6 @@ Text Editable Mode is enabled when Artboard View Mode is active, allowing you to
 **3. Column Grid View**
 
 The grid view can be toggled using the hotkeys defined in Deview. By default, the grid view will be visible once Deview is imported.
-
-
 ## Hotkeys
 
 | Feature               | Hotkey       | Description                                                    |
@@ -51,7 +49,6 @@ The grid view can be toggled using the hotkeys defined in Deview. By default, th
 | **Text Editable**| `Click`      | Enables text edit mode for any text block. Working when Artboard is active. |
 |                       | `Escape`     | Disables text edit mode.                                       |
 | **Column Grid View**  | `1` or `G`   | Toggles the visibility of the grid overlay.                    |
-
 
 ## Grid Container
 

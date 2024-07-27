@@ -26,29 +26,29 @@ You can also include Deview in your project using a CDN. Add the following scrip
 <script src="https://unpkg.com/deview@^0.1.0/dist/deview.js"></script>
 ```
 
+
 ## Features
 
-**1. Artboard View Mode**
+#### 1. Artboard View Mode
+This mode allows you to see the web page as an artboard, similar to design tools like Figma or Adobe InDesign.
 
-Artboard View Mode will be enabled by default. This mode allows you to see the web page as an artboard, similar to design tools like Figma or Adobe InDesign.
+#### 2. Text Editable Mode
+Text Editable Mode is enabled when Artboard View Mode is active, allowing you to quickly change any text block on the page for visual estimate.
 
-**2. Text Editable Mode**
+#### 3. Column Grid View
+The grid view can be toggled using the hotkeys defined in Deview.
 
-Text Editable Mode is enabled when Artboard View Mode is active, allowing you to quickly change any text block on the page for visual adjustments.
 
-**3. Column Grid View**
-
-The grid view can be toggled using the hotkeys defined in Deview. By default, the grid view will be visible once Deview is imported.
 ## Hotkeys
 
 | Feature               | Hotkey       | Description                                                    |
-|-----------------------|--------------|----------------------------------------------------------------|
-| **Artboard View**| `-`          | Activetes the Artboard and Scales the page down.                                          |
+|:----------------------|--------------|----------------------------------------------------------------|
+| Artboard View         | `-`          | Activates the Artboard and scales the page down.               |
 |                       | `+` or `=`   | Scales the page up.                                            |
 |                       | `0`          | Resets the page scale to default (100%).                       |
-| **Text Editable**| `Click`      | Enables text edit mode for any text block. Working when Artboard is active. |
+| Text Editable         | `Click`      | Enables text edit mode for any text block. Working when Artboard is active. |
 |                       | `Escape`     | Disables text edit mode.                                       |
-| **Column Grid View**  | `1` or `G`   | Toggles the visibility of the grid overlay.                    |
+| Column Grid View      | `1` or `G`   | Toggles the visibility of the grid overlay.                    |
 
 ## Grid Container
 

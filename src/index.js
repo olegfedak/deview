@@ -1,3 +1,9 @@
+/*!
+ * Deview - A developer tool for visualizing page layout with a grid overlay and artboard view mode.
+ * (c) 2024 Oleg Fedak
+ * Released under the MIT License.
+ */
+
 import './styles.css';
 
 window.addEventListener('DOMContentLoaded', () => {

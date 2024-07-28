@@ -1,5 +1,9 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode('html,body{height:100%}.deview>*[is-hidden]{visibility:hidden;opacity:0;transition:ease-out .25s}.deview>*[is-visible]{visibility:visible;opacity:1;transition:ease-in-out .25s}.deview-grid{position:fixed;z-index:1;inset-inline-start:0;inset-inline-end:0;top:0;bottom:0;width:calc(var(--container-width, 100%) - (2 * var(--outer-gutter, 0)));height:100%;margin:0 auto;background:repeating-linear-gradient(90deg,var(--grid-column-bg, rgba(128, 201, 255, .25)),var(--grid-column-bg, rgba(128, 201, 255, .25)) calc((100% - (((var(--grid-columns, 12) - 1) * var(--inner-gutter, 20px)))) / var(--grid-columns, 12)),rgba(0,0,0,0) calc((100% - (((var(--grid-columns, 12) - 1) * var(--inner-gutter, 20px)))) / var(--grid-columns, 12)),rgba(0,0,0,0) calc((100% - (((var(--grid-columns, 12) - 1) * var(--inner-gutter, 20px)))) / var(--grid-columns, 12) + var(--inner-gutter, 20px)));pointer-events:none}[dev-scale="1.0"]{transform:scale(1);transition:transform .3s ease}[dev-scale="0.8"]{transform:scale(.8);transition:transform .3s ease}[dev-scale="0.6"]{transform:scale(.6);transition:transform .3s ease}[dev-scale="0.4"]{transform:scale(.4);transition:transform .3s ease}[dev-scaled]{background-color:var(--dev-background, #ececec)}')),document.head.appendChild(e)}}catch(r){console.error("vite-plugin-css-injected-by-js",r)}})();
-window.addEventListener("DOMContentLoaded",()=>{const s=document.querySelector("html"),t=document.querySelector("body");let d=!1;if(!s||!t)return;(()=>{const i=`
+/*!
+ * Deview - A developer tool for visualizing page layout with a grid overlay and artboard view mode.
+ * (c) 2024 Oleg Fedak
+ * Released under the MIT License.
+ */window.addEventListener("DOMContentLoaded",()=>{const s=document.querySelector("html"),t=document.querySelector("body");let d=!1;if(!s||!t)return;(()=>{const i=`
         <div class="deview">
             <!-- Artboard View. Use hotkeys: '-', '+', '0' -->
             <!-- Columns Grid. Use hotkeys '1' or 'G' -->

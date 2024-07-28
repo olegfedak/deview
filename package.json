@@ -8,6 +8,13 @@
     "scripts": {
         "build": "vite build --watch"
     },
+    "keywords": [
+    "deview",
+    "layout",
+    "grid-overlay",
+    "artboard-view",
+    "dev-tool"
+  ],
     "devDependencies": {
         "vite": "^5.3.5",
         "vite-plugin-css-injected-by-js": "^3.5.1"

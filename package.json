@@ -4,17 +4,18 @@
     "description": "A developer tool for visualizing page layout with a grid overlay and artboard view mode.",
     "author": "Oleg Fedak",
     "license": "MIT",
+    "repository": "https://github.com/olegfedak/deview",
     "main": "dist/deview.js",
     "scripts": {
         "build": "vite build --watch"
     },
     "keywords": [
-    "deview",
-    "layout",
-    "grid-overlay",
-    "artboard-view",
-    "dev-tool"
-  ],
+        "deview",
+        "layout",
+        "grid-overlay",
+        "artboard-view",
+        "dev-tool"
+    ],
     "devDependencies": {
         "vite": "^5.3.5",
         "vite-plugin-css-injected-by-js": "^3.5.1"

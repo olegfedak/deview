@@ -1,12 +1,10 @@
 # Deview
 
-*Current Concept:* A developer tool for visualizing page layout with a grid overlay and artboard view mode similar to design tools like Figma or Adobe InDesign.
+Simple webdeveloper tool for visualizing page layout with a grid overlay and artboard view mode similar to design tools like Figma or Adobe InDesign. Interaction takes place using hot keys. 
 
 ## Installation
 
 **Via npm**
-
-To install Deview as a development dependency:
 
 ```bash
 npm install deview -D
@@ -26,6 +24,22 @@ You can also include Deview in your project using a CDN. Add the following scrip
 <script src="https://unpkg.com/deview@^0.1.0/dist/deview.js"></script>
 ```
 
+## Grid Configuration
+
+Customize the grid container by overriding the default Deview CSS variables:
+
+```css
+--container-width: 100%; // you may ignore it if you already have .container in your project
+--grid-columns: 12;
+--grid-column-bg: rgba(128, 201, 255, 0.25);
+--inner-gutter: 20px; // grid gap
+--outer-gutter: 0;
+```
+Example
+```css
+--grid-columns: var(--your-grid-columns);
+--inner-gutter: var(--your-grid-gap);
+```
 
 ## Features
 
@@ -50,20 +64,12 @@ The grid view can be toggled using the hotkeys defined in Deview.
 |                       | `Escape`     | Disables text edit mode.                                       |
 | Column Grid View      | `1` or `G`   | Toggles the visibility of the grid overlay.                    |
 
-## Grid Container
+## Feedback
+If you have any ideas, suggestions, or encounter any issues, please let me know by [opening an issue](https://github.com/olegfedak/deview/issues) or submitting a [pull request](https://github.com/olegfedak/deview/pulls) on this repository. 
 
-You can customize the grid container by overriding the default CSS variables:
-
-```css
-.deview {
-    --container-width: 100%; // ignore if you have .container
-    --grid-columns: 12;
-    --grid-column-bg: rgba(128, 201, 255, 0.25);
-    --inner-gutter: 20px;
-    --outer-gutter: 0;
-}
-```
+## Author
+Deview is conceived and developed by [Oleg Fedak](https://github.com/olegfedak). 
 
 ## License
 
-This project is licensed under the MIT [License](LICENSE) - see the LICENSE file for details.
+This project is open source and available under the [MIT License](LICENSE).

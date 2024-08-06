@@ -4,6 +4,7 @@
     "description": "A developer tool for visualizing page layout with a grid overlay and artboard view mode.",
     "author": "Oleg Fedak",
     "license": "MIT",
+    "homepage": "https://olegfedak.github.io/deview/",
     "repository": "https://github.com/olegfedak/deview",
     "main": "dist/deview.js",
     "scripts": {

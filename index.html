@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Deview demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            :root {
+                --outer-gutter: 40px;
+                --artboard-max-width: 1200px;
+                --grid-columns: 12;
+                --inner-gutter: 20px;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                line-height: 1.6;
+            }
+
+            h1 {
+                margin-block-end: 2em;
+                padding-block-start: 1em;
+                line-height: 1.2;
+            }
+
+            table {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(var(--grid-columns, 0), 1fr);
+                column-gap: var(--inner-gutter);
+            }
+
+            tbody,
+            thead,
+            tr {
+                grid-column: 1/-1;
+                display: inherit;
+                grid-template-columns: subgrid;
+            }
+
+            th:nth-child(1),
+            td:nth-child(1) {
+                grid-column: span 2;
+            }
+
+            th:nth-last-child(1),
+            td:nth-last-child(1) {
+                grid-column: span 3;
+            }
+
+            kbd {
+                padding: .3em .8em;
+                margin: 0;
+                white-space: break-spaces;
+                background-color: #eee;
+                border-radius: 6px;
+            }
+
+            .container {
+                max-width: 1400px;
+                padding-inline: var(--outer-gutter, 0);
+                margin-inline: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Hey!<br>Deview here</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Feature</th>
+                        <th align="left">Hotkey</th>
+                        <th align="left">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hr">
+                        <td align="left">Artboard View</td>
+                        <td><kbd>-</kbd></td>
+                        <td>Activates the Artboard and scales the page down.</td>
+                    </tr>
+                    <tr>
+                        <td align="left"></td>
+                        <td><kbd>+</kbd> or <kbd>=</kbd></td>
+                        <td>Scales the page up.</td>
+                    </tr>
+                    <tr>
+                        <td align="left"></td>
+                        <td><kbd>0</kbd></td>
+                        <td>Resets the page scale to default (100%).</td>
+                    </tr>
+                    <tr class="hr">
+                        <td align="left">Text Editable</td>
+                        <td><kbd>Click</kbd></td>
+                        <td>Enables text edit mode for any text block. Working when Artboard is active.</td>
+                    </tr>
+                    <tr>
+                        <td align="left"></td>
+                        <td><kbd>Escape</kbd></td>
+                        <td>Disables text edit mode.</td>
+                    </tr>
+                    <tr class="hr">
+                        <td align="left">Column Grid View</td>
+                        <td><kbd>1</kbd> or <kbd>G</kbd></td>
+                        <td>Toggles the visibility of the grid overlay.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script type="module" src="/dist/deview.js"></script>
+    </body>
+</html>

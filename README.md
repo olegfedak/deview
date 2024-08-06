@@ -1,6 +1,8 @@
 # Deview
 
-Simple webdeveloper tool for visualizing page layout with a grid overlay and artboard view mode similar to design tools like Figma or Adobe InDesign. Interaction takes place using hot keys. 
+Simple webdeveloper tool for visualizing page layout with a grid overlay and artboard view mode similar to design tools like Figma or Adobe InDesign. Interaction takes place using hot keys.
+
+[Demo](https://olegfedak.github.io/deview/)
 
 ## Installation
 
@@ -24,18 +26,31 @@ You can also include Deview in your project using a CDN. Add the following scrip
 <script src="https://unpkg.com/deview@^0.1.0/dist/deview.js"></script>
 ```
 
-## Grid Configuration
+## Preparing
 
-Customize the grid container by overriding the default Deview CSS variables:
+Deview grid container is quite imitating .container. Assume you have such content container class in your project. For example:
 
 ```css
---container-width: 100%; // you may ignore it if you already have .container in your project
+.container {
+    max-width: 1400px;
+    padding-inline: 40px;
+    margin-inline: auto;
+}
+```
+
+## Configurations
+
+Customize the artboard and grid container by overriding the default Deview CSS variables:
+
+```css
+--artboard-max-width: 1200px;
 --grid-columns: 12;
 --grid-column-bg: rgba(128, 201, 255, 0.25);
---inner-gutter: 20px; // grid gap
---outer-gutter: 0;
+--inner-gutter: 20px;
 ```
-Example
+
+Example:
+
 ```css
 --grid-columns: var(--your-grid-columns);
 --inner-gutter: var(--your-grid-gap);
@@ -65,10 +80,10 @@ The grid view can be toggled using the hotkeys defined in Deview.
 | Column Grid View      | `1` or `G`   | Toggles the visibility of the grid overlay.                    |
 
 ## Feedback
-If you have any ideas, suggestions, or encounter any issues, please let me know by [opening an issue](https://github.com/olegfedak/deview/issues) or submitting a [pull request](https://github.com/olegfedak/deview/pulls) on this repository. 
+If you have any ideas, suggestions, or encounter any issues, please let me know by [opening an issue](https://github.com/olegfedak/deview/issues) or submitting a [pull request](https://github.com/olegfedak/deview/pulls) on this repository.
 
 ## Author
-Deview is conceived and developed by [Oleg Fedak](https://github.com/olegfedak). 
+Deview is conceived and developed by [Oleg Fedak](https://github.com/olegfedak).
 
 ## License
 

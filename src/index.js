@@ -18,10 +18,10 @@ window.addEventListener('DOMContentLoaded', () => {
     // Insert HTML block
     const insertHtmlBlock = () => {
         const blockHtml = `
-        <div class="deview">
-            <!-- Artboard View. Use hotkeys: '-', '+', '0' -->
-            <!-- Columns Grid. Use hotkeys '1' or 'G' -->
-            <div class="deview-grid container" is-hidden></div>
+        <!-- Artboard View. Use hotkeys: '-', '+', '0' -->
+        <!-- Columns Grid. Use hotkeys '1' or 'G' -->
+        <div class="deview-grid container">
+            <div class="deview-grid-columns" is-hidden></div>
         </div>
     `;
         // Create a container element with the custom tag
@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
             case '-':
                 if (scale > 0.4) {
                     bodyElement.setAttribute('dev-scale', scaleOut.toFixed(1));
-                    htmlElement.setAttribute('dev-scaled', '');
+                    htmlElement.setAttribute('dev', '');
                 }
                 break;
             case '=':
@@ -60,13 +60,13 @@ window.addEventListener('DOMContentLoaded', () => {
                     bodyElement.setAttribute('dev-scale', scaleIn.toFixed(1));
 
                 } else if (scale === 1.0) {
-                    htmlElement.removeAttribute('dev-scaled');
+                    htmlElement.removeAttribute('dev');
                 }
                 break;
             case '0':
                 if (scale <= 1.0) {
                     bodyElement.setAttribute('dev-scale', 1.0);
-                    htmlElement.removeAttribute('dev-scaled');
+                    htmlElement.removeAttribute('dev');
                 }
                 break;
         }
@@ -114,7 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
         switch (event.key) {
             case '1':
             case 'g':
-                toggleViewOption('.deview-grid');
+                toggleViewOption('.deview-grid-columns');
                 break;
         }
     };

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Deview demo</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" href="">
         <style>
             :root {
@@ -45,7 +45,7 @@
             tr {
                 grid-column: 1/-1;
                 display: inherit;
-                grid-template-columns: subgrid;
+                grid-template-columns: inherit;
                 column-gap: inherit;
             }
 
@@ -148,9 +148,6 @@
                 </header>
                 <section>
                     <table>
-                        <colgroup>
-                            <col span="2" class="batman" />
-                        </colgroup>
                         <thead>
                             <tr>
                                 <th align="left">Feature</th>

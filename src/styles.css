@@ -74,6 +74,5 @@ html[dev] {
 html[dev] > [dev-scale] {
     max-width: var(--artboard-max-width, 1200px);
     margin-inline: auto;
-    background-color: #fff;
     min-height: 100vh;
 }

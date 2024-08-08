@@ -28,7 +28,7 @@ You can also include Deview in your project using a CDN. Add the following scrip
 
 ## Preparing
 
-Deview grid container is quite imitating .container. Assume you have such content container class in your project. For example:
+Deview grid container is quite imitating `.container`. Assume you have such content container class in your project. For example:
 
 ```css
 .container {

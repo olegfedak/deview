@@ -2,7 +2,7 @@
 
 Simple webdeveloper tool for visualizing page layout with a grid overlay and artboard view mode similar to design tools like Figma or Adobe InDesign. Interaction takes place using hot keys.
 
-[Demo](https://olegfedak.github.io/deview/)
+→ [Demo](https://olegfedak.github.io/deview/)
 
 ## Installation
 

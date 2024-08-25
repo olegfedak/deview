@@ -11,6 +11,7 @@ html[dev] > [dev-scale] {
     max-width: var(--artboard-max-width, 1200px);
     margin-inline: auto;
     min-height: 100vh;
+    outline: solid 1px #ececec;
 }
 
 /* Deview Artboard Scale

@@ -1,6 +1,6 @@
 {
     "name": "deview",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "A developer tool for visualizing page layout with a grid overlay and artboard view mode.",
     "author": "Oleg Fedak",
     "license": "MIT",
